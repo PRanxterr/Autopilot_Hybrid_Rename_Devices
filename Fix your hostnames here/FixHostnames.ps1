@@ -41,7 +41,7 @@ try {
 
 # --- Load and Decrypt Credentials ---
 try {
-    $user = "Your admin account with AD privileges"
+    $user = "Your admin account username with AD privileges goes here"
     $AESKey = Get-Content -Path $aesKeyPath
     $pwdTxt = Get-Content -Path $securePwdPath
     $securePass = $pwdTxt | ConvertTo-SecureString -Key $AESKey
